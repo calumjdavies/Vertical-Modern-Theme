@@ -160,12 +160,12 @@ sup {
 }
 
 a {
-  color: #64a19d;
+  color: #4f4f4f;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #467370;
+  color: #4f4f4f !important;
   text-decoration: underline;
 }
 
@@ -2458,13 +2458,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #52789f;
+  border-color: #52789f;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #548b87;
-  border-color: #4f837f;
+  background-color: #41688e;
+  border-color: #41688e;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
@@ -10135,6 +10135,10 @@ body {
   font-weight: 700;
   padding: 0.9rem 0;
 }
+#mainNav .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.5)!important;
+
+}
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
   outline: none;
@@ -10153,8 +10157,9 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: 0.5rem 0;
+    padding: 10px;
     color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
@@ -10162,32 +10167,38 @@ body {
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #fec20d;
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: #fec20d;
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000000;
+    border: 2px solid black;
   }
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #000000 !important;
+
+  }
+
   #mainNav.navbar-shrink .nav-link {
     color: #000000;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #000000;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #fec20d;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #fec20d;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #fec20d;
   }
 }
 
@@ -10218,7 +10229,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10250,7 +10261,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 4rem;
   background: #52789F;
 }
 .about-section p {
@@ -10278,9 +10289,9 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: rgba(255, 255, 255,0.5);
     border-width: 0.25rem;
-    width: 30%;
+    width: 75%;
   }
 }
 
