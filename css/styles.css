@@ -159,14 +159,23 @@ sup {
   top: -0.5em;
 }
 
+
 a {
   color: #4f4f4f;
   text-decoration: none;
   background-color: transparent;
+  transition: all 0.2s ease-in-out;
 }
 a:hover {
-  color: #4f4f4f !important;
+  color: white !important;
   text-decoration: underline;
+}
+
+nav a {
+  transition: color 0.15s ease-in-out!important;
+}
+nav a:hover {
+  color: #333!important;
 }
 
 a:not([href]):not([class]) {
@@ -1994,7 +2003,7 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2125,6 +2134,10 @@ textarea.form-control {
 .form-text {
   display: block;
   margin-top: 0.25rem;
+}
+
+.text-blue{
+  color: #52789f;
 }
 
 .form-row {
@@ -2488,8 +2501,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #fec20d;
+  border-color: #fec20d;
 }
 .btn-secondary:hover {
   color: #fff;
@@ -10124,8 +10137,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #52789f;
+  border: 1px solid #52789f;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -10269,7 +10282,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10281,17 +10294,17 @@ body {
   }
 }
 .projects-section .project-text {
-  padding: 3rem;
+  padding: 2rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .projects-section .project-text hr, #specialHr {
     border-color: rgba(255, 255, 255,0.5);
-    border-width: 0.25rem;
-    width: 75%;
+    border-width: 0.4rem;
+    width: 55%;
   }
 }
 
@@ -10319,7 +10332,7 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #fec20d;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
@@ -10328,9 +10341,9 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
-  border-width: 0.25rem;
-  width: 3rem;
+  border-color: #52789f;
+  border-width: 0.5rem;
+  width: 4rem;
 }
 .contact-section .social {
   margin-top: 5rem;
@@ -10352,5 +10365,6 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 4rem 1rem 0;
+  background-color: white;
 }
