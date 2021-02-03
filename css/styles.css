@@ -167,7 +167,7 @@ a {
   transition: all 0.2s ease-in-out;
 }
 a:hover {
-  color: white !important;
+  color: black !important;
   text-decoration: underline;
 }
 
